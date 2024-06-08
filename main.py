@@ -1,4 +1,4 @@
-#print('Hello World')
+import
 
 # 1. Link to database (SQLLite)
     Tables: Substance,
@@ -11,6 +11,9 @@ Anonymous Users // Random UUID // Druh
 
 - If fail for hard drgs onlinme srsly mate
     #
+
+#   Picsk wth resuk
+
 # User can make entries for when they dose a substance and store in a DB (SQLite) (i.e '!dose meth 50mg). Also display dose range,interactions
 # User can set parameters like; No more than 1gram of meth per week etc.
 # User can see the history of their use in a given time period.
