@@ -1,0 +1,26 @@
+import requests
+
+from bs4 import BeautifulSoup
+
+url = ''
+soup = BeautifulSoup(url.content, "html.parser")
+page = requests.get(url)
+
+def getInfo(drug,duration,alias,summary,interactions,reagents):
+    try:
+
+        summary = str(summary)
+        url = "https://psychonautwiki.org/wiki/"+drug+"/Summary"
+        html = requests.get(url)
+        info = BeautifulSoup(html.text, 'html.parser')
+
+        print(url)
+    except:
+        return('fail')
+
+    
+
+
+#db = SQL("sqlite:///database.db")
+
+#db.execute("CREATE TABLE IF NOT EXISTS drugs (classes  )")
