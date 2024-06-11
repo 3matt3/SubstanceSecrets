@@ -1,11 +1,8 @@
 
-# Start with CLI
-# Make a GUI
-# Make into a webapp usable on mobile too
-# Standalone mobile app
-# All criss pltform
+
+
 def help():
-    print(' The comands available are: \n!help \n!info (drug) \n!dose (drug)')
+    print(' \nThe comands available are: \n\n!help \n!info (drug) \n!dose (drug)')
 
 
 print('-----------------------------\n\n')
@@ -16,9 +13,14 @@ print('To get a summary of a drug, type   !info drug   \n')
 print('To view the rest of our commands and functions, enter: !help \n')
 
 
-commmands = "!info drug","!duration drug"
-command = input('')
 
+command = input(': ')
 
-if command not in commmands:
-    print('Not a command, try again')
+if command.startswith('!'):
+
+    command = str(command.split('!')[1])
+    command = str(command.split(' ')[0])
+    #drug = str(command.split(' ')[0])
+    
+print(drug)
+

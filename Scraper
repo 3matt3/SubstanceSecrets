@@ -2,19 +2,15 @@ import requests
 
 from bs4 import BeautifulSoup
 
-url = ''
-soup = BeautifulSoup(url.content, "html.parser")
-page = requests.get(url)
-
-def getInfo(drug,duration,alias,summary,interactions,reagents):
+def getInfo(drug):
     try:
 
-        summary = str(summary)
-        url = "https://psychonautwiki.org/wiki/"+drug+"/Summary"
+        input = str(drug)
+        url = "https://psychonautwiki.org/wiki/"+input+"/Summary"
         html = requests.get(url)
-        info = BeautifulSoup(html.text, 'html.parser')
+        htmlinfo = BeautifulSoup(html.text, 'html.parser')
 
-        print(url)
+        print(htmlinfo)
     except:
         return('fail')
 
