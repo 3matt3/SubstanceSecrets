@@ -14,8 +14,8 @@ def getInfo(drug):
     except:
         return('fail')
 
-# FIX     
-def getDose(drug):
+# WORKING   
+def get_dose(drug):
     try:
         drug = str(drug)
         url = 'https://psychonautwiki.org/wiki/'+drug+'/Summary'
@@ -29,21 +29,23 @@ def getDose(drug):
 
         dosages = soupy[9:24]
 
-        roa = dosages[0]
-        threshold = dosages[4]
-        light = dosages[6:8]
-        common = dosages[8:10]
-        strong = dosages[10:12]
-        heavy = dosages[12]
-        msg = str('roa')+'\n\n'+'Threshold: '+str(threshold)+(dosages[13])+'\n'+'Light: '+str(light)+'\nCommon: '+str(common)+'Strong: '+str(strong)+'\nHeavy: '+str(heavy)
+        unit = str(dosages[13])
+        roa = str(dosages[0])
+        threshold = str(dosages[4]+unit)    
+        light2 = str(dosages[6]+dosages[7]+dosages[8]+' '+unit)
+        common2 = str(dosages[8]+dosages[9]+dosages[10]+' '+unit)
+        strong2 = str(dosages[10]+dosages[11]+dosages[12]+' '+unit)
+        heavy2 = str(dosages[12]+' '+unit+' +')
 
+        msg = roa+'\n\n'+'Threshold: '+threshold+'\n'+'Light: '+light2+'\nCommon: '+common2+'\nStrong: '+strong2+'\nHeavy: '+heavy2
 
         #if 'Common' not in dosages:
         #    return('Fail')
-       # print(msg)
-        return msg
 
-        print(soupy[:])
+        #print(dosages)
+        print(msg+'\n\n')
+
+        return msg
    
     except:
         return('Fail')
@@ -73,9 +75,13 @@ def get_durations(drug):
         afterglow = str(duration[-1])
         durations = total,onset,comeup,peak,offset,afterglow
         reply = durations[0]+'\n'+durations[1]+'\n'+durations[2]+'\n'+durations[3]+'\n'+durations[4]+'\n'+durations[5]
-        print(reply)
+
+        print('\n------ '+drug+' ------')
+        print('\n\n'+reply)
+        print('\n\n')
         return(reply)
     except:
         return('fail')
 
-get_durations('cocaine')
+#get_durations('alprazolam')
+#get_dose('alprazolam')

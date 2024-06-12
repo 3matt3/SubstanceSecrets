@@ -1,19 +1,12 @@
-from scraper import getInfo, get_durations
+from scraper import getInfo, get_durations, get_dose
 import datetime
 
-# Make function to dose with timestamps
+# History function to display all times you have dosed
 # sTORE DATA
 # Send warning for high doses and bad combos
 # Finish Scraping and parsing info
 
-
-usage = []
-    
-
-def help():
-    print(' \nThe comands available are: \n\n!help \n!info (drug) \n!dose (drug)')
-
-
+# 
 print('-----------------------------\n\n')
 print('Welcome to Substance Secrets. \n\nAn app with a focus on harm reduction by allowing recreational drug users the ability to track their usage, aswell as search for info such as safe dosages for each substance and will give warnings if you are taking high doses.')
 
@@ -22,38 +15,70 @@ print('To get a summary of a drug, type   !info drug   \n')
 print('To view the rest of our commands and functions, enter: !help \n')
 
 drugs_consumed = []
+drugs_consumed_txt = []
+
+while True:
+
+    command = input(': ')
+
+    if command == '!help':
+        print('\n\n')
+        print('-------------------------------------------\n')
+        print('The currently available commands are: \n')
+        print('!help   - Displays all the available commands')
+        print('!info (drug)   - Gives you a short summary of the drug')
+        print('!duration (drug)   - Displays the duration info for the drug')
+        print('!dosage (drug)   - Displays the dosage range for the drug')
+        print('!dose (drug)   - Allows you to enter your drug consumption with timestamps to log your drug usage')
+        print('!history   - Gives you a summary of your drug consumption')
+        print('\n-------------------------------------------\n')
+
+    if command == '!exit':
+        break
 
 
-command = input(': ')
+    if command.startswith('!'):
 
-if command == '!help':
-    help()
+        command2 = str(command.split('!')[1])
+        try:
+         
+            drug = str(command.split(' ')[1])
+        except:
+            drug = '' 
+        cmd = command2.split(' ')[0]
 
-if command == '!dose':
-    drug = input('What drug did you take?')
-    dosage = input('\nHow many milligrams (mg) of '+drug+' have you consumed?\n\n')
-    route = input('What ROA (Route of Administratiion) did you use? e.g snort')
-    time = datetime.datetime.now()
-    dosetime = str(dosage+'taken at '+time+' via Inhalation')
 
-    drugs_consumed.append(drug)
-    usage.append(dosetime)
-    print(dosetime)
+        if cmd == 'info':
+            summary = getInfo(drug)
+            print(summary+'\n')
 
-if command.startswith('!'):
+        elif cmd == 'duration':
+            print('\n')
+            text = get_durations(drug)
+        
+        elif cmd == 'dosage':
+            print('\n')
+            doses = get_dose(drug)
 
-    command = str(command.split('!')[1])
-    drug = str(command.split(' ')[1])
+        elif cmd == 'dose':
+            dosage = input('\nHow many milligrams (mg) of '+drug+' have you taken? \n')
+            route = input('How did you take '+drug+' ? (Oral,Snorted,Smoked,IV etc) \n')
+            time = datetime.datetime.now()
+            info = {'drug': drug, 'dosage': dosage, 'roa': route,'time': str(time)}
 
-    if command == 'info':
-       summary = getInfo(drug)
-       print(summary+'\n')
+            msg = str(dosage+' mg of '+drug+' taken via '+route+' at: '+str(time))
 
-    elif command == 'duration':
-        cmd = get_durations(drug)
-        print(cmd+'\n')
+            drugs_consumed.append(info)
+            drugs_consumed_txt.append(msg)
+            print(msg)
 
-    
+            print('\n\n\n')   
+            print(drugs_consumed)
+            print(drugs_consumed_txt)
+
+        elif cmd == 'history':
+            print(str(drugs_consumed_txt))
+        
 
     
 
