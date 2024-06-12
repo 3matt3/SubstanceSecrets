@@ -3,13 +3,18 @@ import requests
 from bs4 import BeautifulSoup
 
 # FIX THIS SHIT ASS FUNCTION
-def getInfo(drug):
+def get_info(drug):
     try:
 
-        input = drug
+        input = str(drug)
         url = "https://tripsit.me/factsheets/"+input
-        html = requests.get(url)
+        url2 = 'https://drugs.tripsit.me/'+input
+        html = requests.get(url2)
         info = BeautifulSoup(html.text, 'html.parser')
+
+        soup = info.get_text()
+        soupf = soup.format()
+        print(soupf)
 
     except:
         return('fail')
@@ -85,3 +90,4 @@ def get_durations(drug):
 
 #get_durations('alprazolam')
 #get_dose('alprazolam')
+#get_info('morphine')

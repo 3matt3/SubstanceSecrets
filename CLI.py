@@ -1,5 +1,6 @@
-from scraper import getInfo, get_durations, get_dose
+from scraper import get_info, get_durations, get_dose
 import datetime
+import json
 
 # History function to display all times you have dosed
 # sTORE DATA
@@ -7,17 +8,24 @@ import datetime
 # Finish Scraping and parsing info
 
 # 
-print('-----------------------------\n\n')
-print('Welcome to Substance Secrets. \n\nAn app with a focus on harm reduction by allowing recreational drug users the ability to track their usage, aswell as search for info such as safe dosages for each substance and will give warnings if you are taking high doses.')
+print('-----------------------------\n')
+print('Welcome to Substance Secrets. \n\nAn app with a focus on harm reduction by allowing recreational drug users the ability to track their usage,\nas well as the ability to easily find info for any substance')
 
-print('\n\n-----------------------------\n\n')
+
+print('\n-----------------------------\n')
 print('To get a summary of a drug, type   !info drug   \n')
 print('To view the rest of our commands and functions, enter: !help \n')
 
 drugs_consumed = []
 drugs_consumed_txt = []
 
+
 while True:
+
+    with open('history.json') as f:
+        data = json.load(f)
+        drugs_consumed.append(data)
+    f.close()
 
     command = input(': ')
 
@@ -49,7 +57,7 @@ while True:
 
 
         if cmd == 'info':
-            summary = getInfo(drug)
+            summary = get_info(drug)
             print(summary+'\n')
 
         elif cmd == 'duration':
@@ -70,19 +78,18 @@ while True:
 
             drugs_consumed.append(info)
             drugs_consumed_txt.append(msg)
+
+            with open('history.json', 'w') as f:
+                json.dump(drugs_consumed, f, indent=4)
+
             print(msg)
 
-            print('\n\n\n')   
+            print('\n\n')   
             print(drugs_consumed)
-            print(drugs_consumed_txt)
+            #print(drugs_consumed_txt)
 
         elif cmd == 'history':
-            print(str(drugs_consumed_txt))
+            print(str(drugs_consumed))
         
 
     
-
-
-
-
-#print(drug)
