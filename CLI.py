@@ -5,7 +5,7 @@ import json
 # History function to display all times you have dosed
 # sTORE DATA
 # Send warning for high doses and bad combos
-# Finish Scraping and parsing info
+# Finish Scraping and parsing info!
 
 # 
 print('-----------------------------\n')
@@ -14,7 +14,7 @@ print('Welcome to Substance Secrets. \n\nAn app with a focus on harm reduction b
 
 print('\n-----------------------------\n')
 print('To get a summary of a drug, type   !info drug   \n')
-print('To view the rest of our commands and functions, enter: !help \n')
+print('To view our commands and functions, enter: !help \n')
 
 drugs_consumed = []
 drugs_consumed_txt = []
