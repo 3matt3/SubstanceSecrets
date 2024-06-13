@@ -1,64 +1,824 @@
 [
     [
+        [
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            {
+                "drug": "cocaine",
+                "dosage": "100",
+                "roa": "Snorted",
+                "time": "2024-06-12 21:51:14.692305"
+            }
+        ],
         {
             "drug": "heroin",
-            "dosage": "25",
+            "dosage": "50",
             "roa": "IV",
-            "time": "2024-06-12 16:47:22.898004"
-        },
-        {
-            "drug": "alprazolam",
-            "dosage": "2",
-            "roa": "Oral",
-            "time": "2024-06-12 16:47:47.745322"
+            "time": "2024-06-12 21:53:12.659846"
         }
     ],
     [
+        [
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            {
+                "drug": "cocaine",
+                "dosage": "100",
+                "roa": "Snorted",
+                "time": "2024-06-12 21:51:14.692305"
+            }
+        ],
         {
             "drug": "heroin",
-            "dosage": "25",
+            "dosage": "50",
             "roa": "IV",
-            "time": "2024-06-12 16:47:22.898004"
-        },
-        {
-            "drug": "alprazolam",
-            "dosage": "2",
-            "roa": "Oral",
-            "time": "2024-06-12 16:47:47.745322"
+            "time": "2024-06-12 21:53:12.659846"
         }
     ],
     [
+        [
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            [
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                [
+                    {
+                        "drug": "heroin",
+                        "dosage": "25",
+                        "roa": "IV",
+                        "time": "2024-06-12 16:47:22.898004"
+                    },
+                    {
+                        "drug": "alprazolam",
+                        "dosage": "2",
+                        "roa": "Oral",
+                        "time": "2024-06-12 16:47:47.745322"
+                    }
+                ],
+                {
+                    "drug": "heroin",
+                    "dosage": "25",
+                    "roa": "IV",
+                    "time": "2024-06-12 20:11:19.709242"
+                }
+            ],
+            {
+                "drug": "cocaine",
+                "dosage": "100",
+                "roa": "Snorted",
+                "time": "2024-06-12 21:51:14.692305"
+            }
+        ],
         {
             "drug": "heroin",
-            "dosage": "25",
+            "dosage": "50",
             "roa": "IV",
-            "time": "2024-06-12 16:47:22.898004"
-        },
-        {
-            "drug": "alprazolam",
-            "dosage": "2",
-            "roa": "Oral",
-            "time": "2024-06-12 16:47:47.745322"
-        }
-    ],
-    [
-        {
-            "drug": "heroin",
-            "dosage": "25",
-            "roa": "IV",
-            "time": "2024-06-12 16:47:22.898004"
-        },
-        {
-            "drug": "alprazolam",
-            "dosage": "2",
-            "roa": "Oral",
-            "time": "2024-06-12 16:47:47.745322"
+            "time": "2024-06-12 21:53:12.659846"
         }
     ],
     {
         "drug": "heroin",
-        "dosage": "25",
+        "dosage": "80",
         "roa": "IV",
-        "time": "2024-06-12 20:11:19.709242"
+        "time": "2024-06-13 17:28:23.094509"
     }
 ]

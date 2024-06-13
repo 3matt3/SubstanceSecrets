@@ -81,15 +81,15 @@ while True:
 
             with open('history.json', 'w') as f:
                 json.dump(drugs_consumed, f, indent=4)
-
+            f.close()
             print(msg)
 
             print('\n\n')   
-            print(drugs_consumed)
-            #print(drugs_consumed_txt)
+            #print(drugs_consumed)
+            print(drugs_consumed_txt)
 
         elif cmd == 'history':
-            print(str(drugs_consumed))
+            print(str(drugs_consumed_txt))
         
 
     
