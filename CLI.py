@@ -19,13 +19,24 @@ print('To view our commands and functions, enter: !help \n')
 drugs_consumed = []
 drugs_consumed_txt = []
 
-
-while True:
+try:
 
     with open('history.json') as f:
         data = json.load(f)
         drugs_consumed.append(data)
     f.close()
+except:
+    pass
+try:
+    with open('data.json') as h:
+        data = json.load(h)
+        drugs_consumed_txt.append(data)
+    h.close()
+except:
+    pass
+
+while True:
+
 
     command = input(': ')
 
@@ -69,27 +80,38 @@ while True:
             doses = get_dose(drug)
 
         elif cmd == 'dose':
-            dosage = input('\nHow many milligrams (mg) of '+drug+' have you taken? \n')
+            dosage = str(input('\nHow many milligrams (mg) of '+drug+' have you taken? \n'))
             route = input('How did you take '+drug+' ? (Oral,Snorted,Smoked,IV etc) \n')
             time = datetime.datetime.now()
             info = {'drug': drug, 'dosage': dosage, 'roa': route,'time': str(time)}
 
             msg = str(dosage+' mg of '+drug+' taken via '+route+' at: '+str(time))
 
+
+
             drugs_consumed.append(info)
             drugs_consumed_txt.append(msg)
 
             with open('history.json', 'w') as f:
-                json.dump(drugs_consumed, f, indent=4)
+                json.dump(drugs_consumed, f)
+                
             f.close()
-            print(msg)
+            
+            
+            with open('data.json', 'w') as h:
+                json.dump(drugs_consumed_txt, h)
 
+            h.close()
+
+            print(msg)
             print('\n\n')   
-            #print(drugs_consumed)
-            print(drugs_consumed_txt)
 
         elif cmd == 'history':
-            print(str(drugs_consumed_txt))
+
+            for x in drugs_consumed_txt:
+                print(x)
+                
+
         
 
     
