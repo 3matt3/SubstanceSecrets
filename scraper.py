@@ -14,7 +14,8 @@ def get_info(drug):
 
         soup = info.get_text()
         soupf = soup.format()
-        print(soupf)
+        soupy = str
+        print('//  Under Construction  // ')
 
     except:
         return('fail')
@@ -33,6 +34,8 @@ def get_dose(drug):
         soupy[:] = [x for x in soupy if x]
 
         dosages = soupy[9:24]
+        print(soup)
+        print(dosages)
 
         unit = str(dosages[13])
         roa = str(dosages[0])
@@ -88,6 +91,5 @@ def get_durations(drug):
     except:
         return('fail')
 
-#get_durations('alprazolam')
-#get_dose('alprazolam')
+
 #get_info('morphine')
