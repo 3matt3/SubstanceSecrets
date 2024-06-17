@@ -34,8 +34,8 @@ def get_dose(drug):
         soupy[:] = [x for x in soupy if x]
 
         dosages = soupy[9:24]
-        print(soup)
-        print(dosages)
+        #print(soup)
+        #print(dosages)
 
         unit = str(dosages[13])
         roa = str(dosages[0])
