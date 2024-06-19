@@ -9,8 +9,29 @@ import json
 # Function to add all doses of drug to show their total usage
 # Simple GUI with command line and display
 
-print('-----------------------------\n')
-print('Welcome to Substance Secrets. \n\nAn app with a focus on harm reduction by allowing recreational drug users the ability to track their usage,\nas well as the ability to easily find info for any substance')
+print(
+"""
+//////////////////////////////////////////////////////////////////////////////////
+//                                                                              //
+//                                                                              //
+//    _________       ___.              __                                      //
+//   /   _____/ __ __ \_ |__    _______/  |_ _____     ____    ____    ____     //
+//   \_____  \ |  |  \ | __ \  /  ___/\   __\\__  \   /    \ _/ ___\ _/ __ \    //
+//   /        \|  |  / | \_\ \ \___ \  |  |   / __ \_|   |  \\  \___ \  ___/    //
+//  /_______  /|____/  |___  //____  > |__|  (____  /|___|  / \___  > \___  >   //
+//    ______\/_            \/      \/            _\/      \/      \/      \/    //
+//   /   _____/  ____    ____  _______   ____  _/  |_   ______                  //
+//   \_____  \ _/ __ \ _/ ___\ \_  __ \_/ __ \ \   __\ /  ___/                  //
+//   /        \\  ___/ \  \___  |  | \/\  ___/  |  |   \___ \                   //
+//  /_______  / \___  > \___  > |__|    \___  > |__|  /____  >                  //
+//          \/      \/      \/              \/             \/                   //
+//                                                                              //
+//                                                                              //
+//////////////////////////////////////////////////////////////////////////////////
+"""
+)
+
+print('\nWelcome\n\nA project with a strong focus on harm reduction, by allowing recreational drug users the ability to track their usage,\nas well as to easily find info for any substance')
 print('\n-----------------------------\n')
 #print('To get a summary of a drug, type   !info drug   \n')
 print('To view our commands and functions, enter: !help \n')
