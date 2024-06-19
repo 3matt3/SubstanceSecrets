@@ -31,7 +31,7 @@ print(
 """
 )
 
-print('\nWelcome\n\nA project with a strong focus on harm reduction, by allowing recreational drug users the ability to track their usage,\nas well as to easily find info for any substance')
+print('\n\nA project with a strong focus on harm reduction, by allowing recreational drug users the ability to track their usage,\nas well as to easily find info for any substance')
 print('\n-----------------------------\n')
 #print('To get a summary of a drug, type   !info drug   \n')
 print('To view our commands and functions, enter: !help \n')
