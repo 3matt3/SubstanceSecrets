@@ -54,20 +54,24 @@ try:
 except:
     pass
 
+
+# Main Menu Logic // Keeps repeating input until exit command //
 while True:
     command = input(': ')
     if command == '!help':
-        print('\n\n')
-        print('-------------------------------------------\n')
-        print('The currently available commands are: \n')
-        print('!help   - Displays all the available commands')
-        print('!info (drug)   - Gives you a short summary of the drug')
-        print('!duration (drug)   - Displays the duration info for the drug')
-        print('!dosage (drug)   - Displays the dosage range for the drug')
-        print('!dose (drug)   - Allows you to enter your drug consumption with timestamps to log your drug usage')
-        print('!history   - Gives you a summary of your drug consumption')
-        print('\n-------------------------------------------\n')
-    if command == '!exit':
+        print("""\n
+//////////////////////////////////////////////\n
+The currently available commands are: \n
+!help   - Displays all the available commands
+!info (drug)   - Gives you a short summary of the drug
+!duration (drug)   - Displays the duration info for the drug
+!dosage (drug)   - Displays the dosage range for the drug
+!dose (drug)   - Allows you to enter your drug consumption with timestamps to log your drug usage
+!history   - Gives you a summary of your drug consumption\n
+//////////////////////////////////////////////\n
+""")
+        
+    if command == '!exit' or command == '!q':
         break
     if command.startswith('!'):
         command2 = str(command.split('!')[1])
@@ -111,10 +115,10 @@ while True:
 
         elif cmd == 'history':
             print('\n')
-            print('------------------------------------\n')
+            print('//////////////////////////////////////////////\n')
             for x in drugs_consumed_txt:
                 print(x)
-            print('\n------------------------------------\n')
+            print('\n//////////////////////////////////////////////\n')
             print('\n')
 
                 
