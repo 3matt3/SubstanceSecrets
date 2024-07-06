@@ -1,6 +1,7 @@
 from scraper import get_info, get_durations, get_dose
 import datetime
 import json
+import uuid
 
 # Make user/session classes / objects, Send warning for high doses and bad combos, 
 # Methods:
@@ -38,6 +39,38 @@ print('To view our commands and functions, enter: !help \n')
 
 drugs_consumed = []
 drugs_consumed_txt = []
+user = ''
+global session 
+
+        
+
+class Session:
+    def __init__(self):
+        id = uuid.uuid1()
+        session = id
+    def closeSession(self):
+        pass
+
+    username = username
+    uuid = id
+    
+class User:
+
+    username = username
+    def __init__(self):
+        id = uuid.uuid4()
+
+    def login(self,username):
+        x = 0
+
+
+
+
+
+
+
+
+
 
 try:
     with open('history.json') as f:
@@ -57,7 +90,19 @@ except:
 
 # Main Menu Logic // Keeps repeating input until exit command //
 while True:
+    
+    if len(username) == 0:
+        username = input('what is your username? : ')
+        client = Session(user=username)
+        username = User
+
+
+
+    
+
+
     command = input(': ')
+
     if command == '!help':
         print("""\n
 //////////////////////////////////////////////\n
