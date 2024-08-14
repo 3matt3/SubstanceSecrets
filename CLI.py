@@ -3,6 +3,9 @@ import datetime
 import json
 import uuid
 
+# Push data to a SQLite database, both the usage history and cache the information about the drug when a search command is used,
+# to save time by using cached data (if it has already been searched for) instead of scraping the info again
+
 # Make user/session classes / objects, Send warning for high doses and bad combos, 
 # Methods:
 # User.dose(drug) User.history(drug=all, date=today) User.total(drug)
@@ -39,30 +42,39 @@ print('To view our commands and functions, enter: !help \n')
 
 drugs_consumed = []
 drugs_consumed_txt = []
-user = ''
-global session 
+#user = ''
+#global session 
 
         
 
-class Session:
-    def __init__(self):
-        id = uuid.uuid1()
-        session = id
-    def closeSession(self):
-        pass
+#class Session:
+#    def __init__(self):
+#        id = uuid.uuid1()
+#        session = id
+#    def closeSession(self):
+#       pass
 
-    username = username
-    uuid = id
+   # username = self.user
+    #uuid = id
     
 class User:
 
-    username = username
-    def __init__(self):
-        id = uuid.uuid4()
 
-    def login(self,username):
-        x = 0
+    def __init__(self, username=None, id=None):
+        self.username = username
+        self.id = uuid.uuid4()
 
+
+# 
+#    def save():     // Not rly needed as it already saves to json when the command is inputted
+#        '''Backs up the usage history to history.json'''
+#        print('Saving...')
+
+    def exit():
+        '''Updates the database when the user exits the program'''
+        # Push the current session data (drugs_consumed) to SQLite DB. *preffered
+        # or update the database based on the json file.
+        print('exit...')
 
 
 
@@ -87,14 +99,17 @@ try:
 except:
     pass
 
+username = input('what is your username? : ')
+print(f'Hello {username}! Enter a command')
 
 # Main Menu Logic // Keeps repeating input until exit command //
 while True:
-    
-    if len(username) == 0:
-        username = input('what is your username? : ')
-        client = Session(user=username)
-        username = User
+    #username = ''
+    #if len(username) == 0:
+     #   username = input('what is your username? : ')
+     #   client = Session(user=username)
+     #   username = User
+
 
 
 

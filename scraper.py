@@ -92,4 +92,4 @@ def get_durations(drug):
         return('fail')
 
 
-#get_info('morphine')
+get_dose('morphine')
