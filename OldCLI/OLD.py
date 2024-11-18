@@ -73,7 +73,7 @@ def get_dosage(drug):
     except:
         return 'fail'
 
-get_dosage('cocaine')
+
 
     #roa = dosages[0]
     #threshhold = dosages[4]+'mg'

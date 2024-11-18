@@ -42,6 +42,8 @@ print('To view our commands and functions, enter: !help \n')
 
 drugs_consumed = []
 drugs_consumed_txt = []
+session_usage = []
+session_use_msg = []
 #user = ''
 #global session 
 
@@ -77,31 +79,29 @@ class User:
         print('exit...')
 
 
+def loadData():
+    try:
+        with open('history.json') as f:
+            data = json.load(f)
+            drugs_consumed.extend(data)
+        f.close()
+    except:
+        print('FAILED TO OPEN HISTORY')
+        pass
+    try:
+        with open('data.json') as h:
+            data = json.load(h)
+            drugs_consumed_txt.extend(data)
+        h.close()
+    except:
+        print('FAILED TO OPEN HISTORY DATA')
+        pass
 
-
-
-
-
-
-
-try:
-    with open('history.json') as f:
-        data = json.load(f)
-        drugs_consumed.extend(data)
-    f.close()
-except:
-    pass
-try:
-    with open('data.json') as h:
-        data = json.load(h)
-        drugs_consumed_txt.extend(data)
-    h.close()
-except:
-    pass
-
-username = input('what is your username? : ')
-print(f'Hello {username}! Enter a command')
-
+def test():
+    print(str(drugs_consumed_txt))
+#username = input('what is your username? : ')
+#print(f'Hello {username}! Enter a command')
+#loadData()
 # Main Menu Logic // Keeps repeating input until exit command //
 while True:
     #username = ''
@@ -109,8 +109,6 @@ while True:
      #   username = input('what is your username? : ')
      #   client = Session(user=username)
      #   username = User
-
-
 
 
     
@@ -153,6 +151,11 @@ The currently available commands are: \n
             print('\n')
             doses = get_dose(drug)
 
+        elif cmd == 'test':
+            test()
+        elif cmd == 'load':
+            loadData()
+
         elif cmd == 'dose':
             dosage = str(input('\nHow many milligrams (mg) of '+drug+' have you taken? \n'))
             route = input('How did you take '+drug+' ? (Oral,Snorted,Smoked,IV etc) \n')
@@ -161,6 +164,9 @@ The currently available commands are: \n
             msg = str(dosage+' mg of '+drug+' taken via '+route+' at: '+str(time))
             drugs_consumed.append(info)
             drugs_consumed_txt.append(msg)
+            session_usage.append(info)
+            session_use_msg.append(msg)
+
 
             with open('history.json', 'w') as f:
                 json.dump(drugs_consumed, f)   
