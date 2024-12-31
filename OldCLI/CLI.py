@@ -2,6 +2,7 @@ from scraper import get_info, get_durations, get_dose
 import datetime
 import json
 import uuid
+import os
 
 # Push data to a SQLite database, both the usage history and cache the information about the drug when a search command is used,
 # to save time by using cached data (if it has already been searched for) instead of scraping the info again
@@ -45,8 +46,12 @@ drugs_consumed_txt = []
 session_usage = []
 session_use_msg = []
 #user = ''
-#global session 
+#global session
 
+def chdir():
+    os.chdir('OldCLI')
+
+pwd = os.getcwd()
         
 
 #class Session:
@@ -80,6 +85,7 @@ class User:
 
 
 def loadData():
+    print(pwd)
     try:
         with open('history.json') as f:
             data = json.load(f)
@@ -154,7 +160,11 @@ The currently available commands are: \n
         elif cmd == 'test':
             test()
         elif cmd == 'load':
+            chdir()
             loadData()
+
+        #elif cmd == 'cd':
+        #    os.chdir('OldCLI')
 
         elif cmd == 'dose':
             dosage = str(input('\nHow many milligrams (mg) of '+drug+' have you taken? \n'))
